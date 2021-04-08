@@ -19,7 +19,8 @@ class HijriDatePicker extends StatelessWidget {
               selectionColor: Colors.indigoAccent,
               monthViewSettings: HijriDatePickerMonthViewSettings(
                   dayFormat: 'EEE',
-                  viewHeaderStyle: DateRangePickerViewHeaderStyle(backgroundColor: Colors.tealAccent)),
+                  viewHeaderStyle: DateRangePickerViewHeaderStyle(
+                      backgroundColor: Colors.tealAccent)),
               headerStyle:
                   DateRangePickerHeaderStyle(backgroundColor: Colors.teal),
             ),
