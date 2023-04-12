@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
-void main() => runApp(HijriDatePicker());
+void main() => runApp(const HijriDatePicker());
 
 class HijriDatePicker extends StatelessWidget {
+  const HijriDatePicker({super.key});
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -17,12 +19,12 @@ class HijriDatePicker extends StatelessWidget {
               selectionShape: DateRangePickerSelectionShape.rectangle,
               showNavigationArrow: true,
               selectionColor: Colors.indigoAccent,
-              monthViewSettings: HijriDatePickerMonthViewSettings(
+              monthViewSettings: const HijriDatePickerMonthViewSettings(
                   dayFormat: 'EEE',
                   viewHeaderStyle: DateRangePickerViewHeaderStyle(
                       backgroundColor: Colors.tealAccent)),
               headerStyle:
-                  DateRangePickerHeaderStyle(backgroundColor: Colors.teal),
+              const DateRangePickerHeaderStyle(backgroundColor: Colors.teal),
             ),
           ),
         ),
